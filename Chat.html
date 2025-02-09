@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSDM Help</title>
+  <style>
+    /* Styling for the Help Button */
+    .help-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff; /* BSDM theme color */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+      text-align: center;
+      animation: blink 1s infinite, pulse 2s infinite;
+    }
+
+    .help-button:hover {
+      background-color: #0056b3; /* Darker shade on hover */
+    }
+
+    /* Blinking Effect */
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* Pulsating Effect */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Help Button -->
+  <a 
+    href="https://copilotstudio.microsoft.com/environments/Default-1a2a8cea-6dab-42a4-9146-b7fedb5bcfe1/bots/crf01_bsdm/canvas?__version__=2&enableFileAttachment=true" 
+    class="help-button" 
+    target="_blank">
+    Help (BSDM)
+  </a>
+</body>
+</html>
